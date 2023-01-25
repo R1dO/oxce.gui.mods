@@ -1,0 +1,13 @@
+#
+# metadata.yaml for the 'purists' mod
+#
+# Jokes aside.
+# This mod serves to demontstrate how to bring back original screens.
+# Using the optional features defined in my branches.
+
+name: "R1dO: Vanilla revival TFTD"
+version: 0.1
+description: "Demonstates which options can be used to bring back vanilla experience"
+author: "R1dO"
+
+master: "xcom2"

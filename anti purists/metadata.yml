@@ -1,0 +1,12 @@
+#
+# metadata.yaml for the 'anti purists' mod
+#
+# Jokes aside.
+# This mod serves to demontstrate how to activate the interface options as defiend in my branches.
+
+name: "R1dO: GUI alternatives"
+version: 0.1
+description: "Demonstates which options can be used to activate my personal view on possble GUIs alternatives."
+author: "R1dO"
+
+master: "*"
