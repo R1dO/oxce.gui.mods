@@ -5,6 +5,7 @@ interfaces:
       - id: optionShowCraftLimits
         custom: 0    # 0 = never, 1 = always, 2 = if such a limit exist
 
+### TODO
       # Control how list deals with claimed items
       - id: optionShowClaimedAmounts
         custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
