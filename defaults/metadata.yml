@@ -1,0 +1,10 @@
+#
+# metadata.yaml for the 'defaults' mod
+#
+
+name: "R1dO: oxce GUI default for optional mod features"
+version: 0.1
+description: "Keep track of (sensible) defaults for (new) GUI related options.
+author: "R1dO"
+
+master: "*"
