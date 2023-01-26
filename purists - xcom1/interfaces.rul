@@ -1,14 +1,12 @@
 interfaces:
   - type: craftEquipment
     elements:
-      # Change info line if craft has limits.
       - id: optionShowCraftLimits
         custom: 0    # 0 = never, 1 = always, 2 = if such a limit exist
+      - id: optionShowClaimedAmounts
+        custom: 0    # 0 = off, 1 = Meridian style, 2 = r1do style.
 
 ### TODO
-      # Control how list deals with claimed items
-      - id: optionShowClaimedAmounts
-        custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       # Activate global arrow functionality (and safety on OK button)
       - id: optionUseGlobalListArrows
         customBool: true
@@ -37,7 +35,6 @@ interfaces:
         # Does not affect message as shown on the button (use translation for that)
         customBool: true
 
-
 # Borrowed from `standard/Limit_Craft_Item_Capacities/`
 crafts:
   - type: STR_SKYRANGER
@@ -46,3 +43,7 @@ crafts:
     maxItems: 80
   - type: STR_AVENGER
     maxItems: 80
+
+# Options
+fixedUserOptions:
+  oxceAlternateCraftEquipmentManagement: false

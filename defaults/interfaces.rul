@@ -4,11 +4,11 @@ interfaces:
       # Change info line if craft has limits.
       - id: optionShowCraftLimits
         custom: 2    # 0 = never, 1 = always, 2 = if such a limit exist
+      # Control display of claimed items
+      - id: optionShowClaimedAmounts
+        custom: 1    # 0 = off, 1 = Meridian style, 2 = r1do style.
 
 ### TODO
-      # Control how list deals with claimed items
-      - id: optionShowClaimedAmounts
-        custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       # Activate global arrow functionality (and safety on OK button)
       - id: optionUseGlobalListArrows
         customBool: true
@@ -36,3 +36,7 @@ interfaces:
         # Message will be shown if less items are on craft than claimed by soldiers.
         # Does not affect message as shown on the button (use translation for that)
         customBool: true
+
+# Options
+recommendedUserOptions:
+  oxceAlternateCraftEquipmentManagement: false
