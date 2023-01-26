@@ -7,7 +7,7 @@
 
 name: "R1dO: Vanilla revival UFO"
 version: 0.1
-description: "Demonstates which options can be used to bring back vanilla experience"
+description: "Demonstrate options usage for vanilla experience.\nAffected Screens: crafEquipment."
 author: "R1dO"
 
 master: "xcom1"

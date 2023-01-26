@@ -4,7 +4,7 @@
 
 name: "R1dO: oxce GUI default for optional mod features"
 version: 0.1
-description: "Keep track of (sensible) defaults for (new) GUI related options.
+description: "Demonstrate (sensible) defaults for (new) GUI options.\nAffected Screens: crafEquipment."
 author: "R1dO"
 
 master: "*"

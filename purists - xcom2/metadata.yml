@@ -7,7 +7,7 @@
 
 name: "R1dO: Vanilla revival TFTD"
 version: 0.1
-description: "Demonstates which options can be used to bring back vanilla experience"
+description: "Demonstrates options usage for vanilla experience.\nAffected Screens: crafEquipment."
 author: "R1dO"
 
 master: "xcom2"
