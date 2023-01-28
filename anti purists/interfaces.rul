@@ -36,3 +36,21 @@ interfaces:
 # Options
 recommendedUserOptions:
   oxceAlternateCraftEquipmentManagement: true # Not really my personal preference, but hey: we are anti purist here.
+
+# Related translations.
+# extraStrings:
+#   - type: en-US
+#     strings:
+#       STR_SPACE_USAGE_VS_MAX:
+#         zero: "SPACE>{ALT}{0}"
+#         other: "SPACE>{ALT}{0}:{1}"
+#       STR_ITEMS_USAGE_VS_MAX:
+#         zero: "ITEMS>{ALT}{0}"
+#         other: "ITEMS>{ALT}{0}:{1}"
+#       STR_ITEM_SIZE_USAGE_VS_MAX:
+#         zero: "SIZE>{ALT}{0}"
+#         other: "SIZE>{ALT}{0}:{1}"
+#       STR_CRAFTINVENTORY_BIGGER_THAN_CLAIMED: "> {0}"
+#       STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: "= {0}"
+#       STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: "< {0}"
+#       STR_OK_BUTTON_WARNING: "!!!"

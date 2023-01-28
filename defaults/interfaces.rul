@@ -39,3 +39,22 @@ interfaces:
 # Options
 recommendedUserOptions:
   oxceAlternateCraftEquipmentManagement: false
+
+# Related translations.
+# You might want to use your preferred way of defining extra-strings.
+extraStrings:
+  - type: en-US
+    strings:
+      STR_SPACE_USAGE_VS_MAX:      # {0} is claimed space, {1} is max space.
+        zero: "SPACE>{ALT}{0}"       # No max defined for craft
+        other: "SPACE>{ALT}{0}:{1}"
+      STR_ITEMS_USAGE_VS_MAX:      # {0} is amount of items, {1} is max items.
+        zero: "ITEMS>{ALT}{0}"       # No max defined for craft
+        other: "ITEMS>{ALT}{0}:{1}"
+      STR_ITEM_SIZE_USAGE_VS_MAX:  # {0} is total item size, {1} is max item size.
+        zero: "SIZE>{ALT}{0}"        # No max defined for craft
+        other: "SIZE>{ALT}{0}:{1}"
+      STR_CRAFTINVENTORY_BIGGER_THAN_CLAIMED: "> {0}"  # {0} is claimed/reserved amount.
+      STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: "= {0}"     # {0} is claimed/reserved amount.
+      STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: "< {0}" # {0} is claimed/reserved amount.
+      STR_OK_BUTTON_WARNING: "!!!" # Yup ... screaming is allowed.

@@ -45,3 +45,22 @@ crafts:
 # Options
 fixedUserOptions:
   oxceAlternateCraftEquipmentManagement: false
+
+# Related translations.
+# You might want to use your preferred way of defining extra-strings.
+extraStrings:
+  - type: en-US
+    strings:
+      STR_SPACE_USAGE_VS_MAX:
+        zero: " "
+        other: " "
+      STR_ITEMS_USAGE_VS_MAX:
+        zero: " "
+        other: " "
+      STR_ITEM_SIZE_USAGE_VS_MAX:
+        zero: " "
+        other: " "
+      STR_CRAFTINVENTORY_BIGGER_THAN_CLAIMED: " "
+      STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: " "
+      STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: " "
+      STR_OK_BUTTON_WARNING: "OK"               # Equal to 'STR_OK', hides any logic error.
