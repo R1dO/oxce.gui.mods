@@ -7,6 +7,8 @@ interfaces:
         custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
         customBool: true
+      - id: ignoreInventoryWarningMessage
+        customBool: true    # Stop pestering, I know what I'm doing.
 
 ### TODO
       # Since i've added a filter, might as well control the 'complete' combobox.
@@ -25,19 +27,13 @@ interfaces:
 #          - STR_UNASSIGNED                       # Code defined
         # Does RMB cause selection to be inverted?
         customBool: true
-      # Control warning message if inventory visit would lead to soldiers losing items.
-      - id: inventoryWarningMessage
-        color: 241   # pink
-        # Should we show a warning message and protect player when entering inventory.
-        # Message will be shown if less items are on craft than claimed by soldiers.
-        # Does not affect message as shown on the button (use translation for that)
-        customBool: true
+
 
 # Options
 recommendedUserOptions:
   oxceAlternateCraftEquipmentManagement: true # Not really my personal preference, but hey: we are anti purist here.
 
-# Related translations.
+# # Related translations.
 # extraStrings:
 #   - type: en-US
 #     strings:
@@ -54,3 +50,5 @@ recommendedUserOptions:
 #       STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: "= {0}"
 #       STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: "< {0}"
 #       STR_OK_BUTTON_WARNING: "!!!"
+#       STR_INVENTORY_BUTTON_WARNING: "!!! Inventory !!!"
+#       STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: "Soldiers will lose equipment!{SMALLLINE}To visit inventory anyway use:{NEWLINE}\"CTRL + left mouse button\"{NEWLINE}or \"right mouse button\"."

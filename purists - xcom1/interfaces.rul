@@ -7,6 +7,8 @@ interfaces:
         custom: 0    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
         customBool: false
+      - id: ignoreInventoryWarningMessage
+        customBool: true
 
 ### TODO
       # Since i've added a filter, might as well control the 'complete' combobox.
@@ -25,13 +27,7 @@ interfaces:
 #          - STR_UNASSIGNED                       # Code defined
         # Does RMB cause selection to be inverted?
         customBool: true
-      # Control warning message if inventory visit would lead to soldiers losing items.
-      - id: inventoryWarningMessage
-        color: 241   # pink
-        # Should we show a warning message and protect player when entering inventory.
-        # Message will be shown if less items are on craft than claimed by soldiers.
-        # Does not affect message as shown on the button (use translation for that)
-        customBool: true
+
 
 # Borrowed from `standard/Limit_Craft_Item_Capacities/`
 crafts:
@@ -47,7 +43,8 @@ fixedUserOptions:
   oxceAlternateCraftEquipmentManagement: false
 
 # Related translations.
-# You might want to use your preferred way of defining extra-strings.
+# Uses " " not "" to hide translations.
+# Reason: Empty string is used to indicate missing translations.
 extraStrings:
   - type: en-US
     strings:
@@ -64,3 +61,5 @@ extraStrings:
       STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: " "
       STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: " "
       STR_OK_BUTTON_WARNING: "OK"               # Equal to 'STR_OK', hides any logic error.
+      STR_INVENTORY_BUTTON_WARNING: "Inventory" # Equal to 'STR_INVENTORY', hides any logic error.
+      STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: " "

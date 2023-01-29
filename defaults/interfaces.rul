@@ -10,6 +10,9 @@ interfaces:
       # Activate global arrow functionality (and safety on OK button)
       - id: optionUseGlobalListArrows
         customBool: true
+      # Control display of warning message if inventory visit leads to soldiers losing items.
+      - id: ignoreInventoryWarningMessage
+        customBool: false
 
 ### TODO
       # Since i've added a filter, might as well control the 'complete' combobox.
@@ -28,13 +31,7 @@ interfaces:
 #          - STR_UNASSIGNED                       # Code defined
         # Does RMB cause selection to be inverted?
         customBool: true
-      # Control warning message if inventory visit would lead to soldiers losing items.
-      - id: inventoryWarningMessage
-        color: 241   # pink
-        # Should we show a warning message and protect player when entering inventory.
-        # Message will be shown if less items are on craft than claimed by soldiers.
-        # Does not affect message as shown on the button (use translation for that)
-        customBool: true
+
 
 # Options
 recommendedUserOptions:
@@ -42,6 +39,7 @@ recommendedUserOptions:
 
 # Related translations.
 # You might want to use your preferred way of defining extra-strings.
+# Shown here are the defaults as supplied by oxce.
 extraStrings:
   - type: en-US
     strings:
@@ -58,3 +56,5 @@ extraStrings:
       STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: "= {0}"     # {0} is claimed/reserved amount.
       STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: "< {0}" # {0} is claimed/reserved amount.
       STR_OK_BUTTON_WARNING: "!!!" # Yup ... screaming is allowed.
+      STR_INVENTORY_BUTTON_WARNING: "!!! Inventory !!!"
+      STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: "Soldiers will lose equipment!{SMALLLINE}To visit inventory anyway use:{NEWLINE}\"CTRL + left mouse button\"{NEWLINE}or \"right mouse button\"."
