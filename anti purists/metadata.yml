@@ -6,7 +6,7 @@
 
 name: "R1dO: GUI alternatives"
 version: 0.1
-description: "Demonstrates personal preference for the GUI alternatives.\nAffected Screens: crafEquipment."
+description: "Demonstrates activation of non-vanilla GUI alternatives.\nAffected Screens: crafEquipment."
 author: "R1dO"
 
 master: "*"
