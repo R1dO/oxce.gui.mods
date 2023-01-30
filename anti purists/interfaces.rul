@@ -9,29 +9,20 @@ interfaces:
         customBool: true
       - id: ignoreInventoryWarningMessage
         customBool: true    # Stop pestering, I know what I'm doing.
-
-### TODO
-      # Since i've added a filter, might as well control the 'complete' combobox.
-      - id: filterButton
-        color: 241
-        # Filter ordering, any (mod) item category not included will be added after the last entry.
-        # When empty fall back to default behavior (the one listed here).
-        customList:
-          - STR_ALL                              # Code defined
-          - STR_EQUIPPED                         # Code defined
-          - STR_CLAIMED_BY_SOLDIERS              # Code defined
-#          - STR_SOME_DEFINED_ITEM_CATEGORY_NO9   # Example
-#          - STR_SOME_DEFINED_ITEM_CATEGORY_NO3   # Example
-          # Unless defined here the next entry will always be included as last one if conditions are satisfied.
-          # Condition: mod uses item categories but not all items are assigned to one.
-#          - STR_UNASSIGNED                       # Code defined
-        # Does RMB cause selection to be inverted?
+      - id: optionUseFilterButton
         customBool: true
-
+      - id: optionUseFilterButton
+        customBool: true
+        # For demonstration purposes only: reorder default categories.
+        customList:
+          - STR_UNASSIGNED
+          - STR_CLAIMED_BY_SOLDIERS
+          - STR_ALL
+          - STR_EQUIPPED
 
 # Options
 recommendedUserOptions:
-  oxceAlternateCraftEquipmentManagement: true # Not really my personal preference, but hey: we are anti purist here.
+  oxceAlternateCraftEquipmentManagement: true
 
 # # Related translations.
 # extraStrings:
@@ -52,3 +43,8 @@ recommendedUserOptions:
 #       STR_OK_BUTTON_WARNING: "!!!"
 #       STR_INVENTORY_BUTTON_WARNING: "!!! Inventory !!!"
 #       STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: "Soldiers will lose equipment!{SMALLLINE}To visit inventory anyway use:{NEWLINE}\"CTRL + left mouse button\"{NEWLINE}or \"right mouse button\"."
+#       STR_INVERSE_FILTER_INDICATOR: "Not {0}"
+#       STR_ALL: "Everything"
+#       STR_EQUIPPED: "Equipped"
+#       STR_CLAIMED_BY_SOLDIERS: "Claimed by Soldiers"
+#       STR_UNASSIGNED: "Other"

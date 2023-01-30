@@ -9,24 +9,9 @@ interfaces:
         customBool: false
       - id: ignoreInventoryWarningMessage
         customBool: true
-
-### TODO
-      # Since i've added a filter, might as well control the 'complete' combobox.
-      - id: filterButton
-        color: 241
-        # Filter ordering, any (mod) item category not included will be added after the last entry.
-        # When empty fall back to default behavior (the one listed here).
-        customList:
-          - STR_ALL                              # Code defined
-          - STR_EQUIPPED                         # Code defined
-          - STR_CLAIMED_BY_SOLDIERS              # Code defined
-#          - STR_SOME_DEFINED_ITEM_CATEGORY_NO9   # Example
-#          - STR_SOME_DEFINED_ITEM_CATEGORY_NO3   # Example
-          # Unless defined here the next entry will always be included as last one if conditions are satisfied.
-          # Condition: mod uses item categories but not all items are assigned to one.
-#          - STR_UNASSIGNED                       # Code defined
-        # Does RMB cause selection to be inverted?
-        customBool: true
+      - id: optionUseFilterButton
+        customBool: false
+        delete: customList
 
 
 # Borrowed from `standard/Limit_Craft_Item_Capacities_TFTD/`
@@ -45,6 +30,7 @@ fixedUserOptions:
 # Related translations.
 # Uses " " not "" to hide translations.
 # Reason: Empty string is used to indicate missing translations.
+# Not really needed, options as defined before should hide all translations.
 extraStrings:
   - type: en-US
     strings:
@@ -63,3 +49,8 @@ extraStrings:
       STR_OK_BUTTON_WARNING: "OK"               # Equal to 'STR_OK', hides any logic error.
       STR_INVENTORY_BUTTON_WARNING: "Inventory" # Equal to 'STR_INVENTORY', hides any logic error.
       STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: " "
+      STR_INVERSE_FILTER_INDICATOR: " "
+      STR_ALL: " "
+      STR_EQUIPPED: " "
+      STR_CLAIMED_BY_SOLDIERS: " "
+      STR_UNASSIGNED: "Other"  # Keep original since also used by purchase/sell/transfer states.
