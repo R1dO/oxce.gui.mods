@@ -1,8 +1,13 @@
 interfaces:
   - type: craftEquipment
     elements:
-      - id: optionShowCraftLimits
-        custom: 0    # 0 = never, 1 = always, 2 = if such a limit exist
+      - id: list # No color coding in vanilla TFTD.
+        color: 244
+        color2: 244
+        border: 1 # Arrow buttons
+      - id: ammoColor # No color coding in vanilla TFTD.
+        color: 244
+
       - id: optionShowClaimedAmounts
         custom: 0    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
@@ -13,6 +18,12 @@ interfaces:
         customBool: false
         delete: customList
 
+    options:
+      - delete: showCraftLimits
+      # - id: showCraftLimits
+      #   variant: 0    # 0 = never, 1 = always, 2 = if such a limit exist
+      - id: showSoldiersAssigned
+        active: false
 
 # Borrowed from `standard/Limit_Craft_Item_Capacities_TFTD/`
 crafts:
@@ -28,9 +39,8 @@ fixedUserOptions:
   oxceAlternateCraftEquipmentManagement: false
 
 # Related translations.
-# Uses " " not "" to hide translations.
-# Reason: Empty string is used to indicate missing translations.
-# Not really needed, options as defined before should hide all translations.
+# Strings with " " are those that need no translation for this mod.
+# Not using "" since the empty string has a historical meaning of " missing translation".
 extraStrings:
   - type: en-US
     strings:
@@ -46,11 +56,15 @@ extraStrings:
       STR_CRAFTINVENTORY_BIGGER_THAN_CLAIMED: " "
       STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: " "
       STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: " "
-      STR_OK_BUTTON_WARNING: "OK"               # Equal to 'STR_OK', hides any logic error.
-      STR_INVENTORY_BUTTON_WARNING: "Inventory" # Equal to 'STR_INVENTORY', hides any logic error.
+      STR_OK_BUTTON_WARNING: "OK"                # Equal to 'STR_OK', hides any logic error.
+      STR_INVENTORY_BUTTON_WARNING: "Inventory"  # Equal to 'STR_INVENTORY', hides any logic error.
       STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: " "
       STR_INVERSE_FILTER_INDICATOR: " "
       STR_ALL: " "
       STR_EQUIPPED: " "
       STR_CLAIMED_BY_SOLDIERS: " "
-      STR_UNASSIGNED: "Other"  # Keep original since also used by purchase/sell/transfer states.
+      STR_UNASSIGNED: "Other"  # Keep original since translation is also used by purchase/sell/transfer states.
+## Vanilla strings != to OXC(E) supplied ones
+      STR_NO_MORE_EQUIPMENT_ALLOWED:
+        one: "NO MORE EQUIPMENT ALLOWED ON BOARD!{SMALLLINE}You are only allowed to take a maximum of {N} item of equipment on missions."
+        other: "NO MORE EQUIPMENT ALLOWED ON BOARD!{SMALLLINE}You are only allowed to take a maximum of {N} items of equipment on missions."

@@ -1,8 +1,9 @@
 interfaces:
   - type: craftEquipment
     elements:
-      - id: optionShowCraftLimits
-        custom: 1    # 0 = never, 1 = always, 2 = if such a limit exist
+#      - id: text  # No need to define again (already in default)
+#        border: 213  # xcom1 Error color: Gold
+#        border: 8  # xcom2 Error color: Red
       - id: optionShowClaimedAmounts
         custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
@@ -19,6 +20,11 @@ interfaces:
           - STR_CLAIMED_BY_SOLDIERS
           - STR_ALL
           - STR_EQUIPPED
+    options:
+      - id: showCraftLimits
+        variant: 1
+      - id: showSoldiersAssigned
+        active: true
 
 # Options
 recommendedUserOptions:

@@ -1,9 +1,8 @@
 interfaces:
   - type: craftEquipment
     elements:
-      # Change info line if craft has limits.
-      - id: optionShowCraftLimits
-        custom: 2    # 0 = never, 1 = always, 2 = if such a limit exist
+      - id: text
+        border: 8  # Error color: Red (use 146 for gold)
       # Control display of claimed items
       - id: optionShowClaimedAmounts
         custom: 1    # 0 = off, 1 = Meridian style, 2 = r1do style.
@@ -29,6 +28,11 @@ interfaces:
 #          - STR_CUSTOM_ITEM_CATEGORY_2   # Example item category
 #          - STR_CUSTOM_ITEM_CATEGORY_N   # Example item category
 #          - STR_UNASSIGNED               # Default, after custom categories.
+    options:
+      - id: showCraftLimits  # Change info line if craft has limits.
+        variant: 2           # 0 = never, 1 = always, 2 = if such a limit exist
+      - id: showSoldiersAssigned
+        active: true
 
 # Options
 recommendedUserOptions:

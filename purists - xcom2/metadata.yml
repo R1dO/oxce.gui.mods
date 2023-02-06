@@ -1,13 +1,14 @@
 #
 # metadata.yaml for the 'purists - xcom2' mod
 #
+# Reset personal baselines for those that take all QoL for granted.
+#
 # Jokes aside.
-# This mod serves to demontstrate how to bring back original screens.
-# Using the optional features defined in my branches.
+# This mod serves to demonstrate how to bring back original screens.
 
 name: "R1dO: Vanilla revival TFTD"
 version: 0.1
-description: "Demonstrates options usage for vanilla experience.\nAffected Screens: crafEquipment."
+description: "Demonstrates options usage for vanilla experience.\nAffected Screens: craftEquipment."
 author: "R1dO"
 
 master: "xcom2"
