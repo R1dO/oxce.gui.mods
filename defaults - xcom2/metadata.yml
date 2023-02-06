@@ -1,0 +1,10 @@
+#
+# metadata.yaml for the 'defaults' mod
+#
+
+name: "R1dO: oxce GUI default for optional mod features"
+version: 0.1
+description: "Demonstrate (sensible) defaults for (new) GUI options.\nAffected Screens: crafEquipment."
+author: "R1dO"
+
+master: "xcom2"

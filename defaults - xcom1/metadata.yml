@@ -7,4 +7,4 @@ version: 0.1
 description: "Demonstrate (sensible) defaults for (new) GUI options.\nAffected Screens: crafEquipment."
 author: "R1dO"
 
-master: "*"
+master: "xcom1"
