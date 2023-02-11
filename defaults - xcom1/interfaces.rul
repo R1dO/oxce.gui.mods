@@ -2,6 +2,8 @@ interfaces:
   - type: craftEquipment
     elements:
       - id: text
+        color: 241   # pink
+        color2: 208  # white
         border: 213  # Error color: Gold
       # Control display of claimed items
       - id: optionShowClaimedAmounts
