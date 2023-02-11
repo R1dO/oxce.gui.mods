@@ -11,9 +11,6 @@ interfaces:
       # Activate global arrow functionality (and safety on OK button)
       - id: optionUseGlobalListArrows
         customBool: true
-      # Control display of warning message if inventory visit leads to soldiers losing items.
-      - id: ignoreInventoryWarningMessage
-        customBool: false
       # Control filter functionality
       - id: optionUseFilterButton
         customBool: true
@@ -35,6 +32,8 @@ interfaces:
         variant: 2           # 0 = never, 1 = always, 2 = if such a limit exist
       - id: showSoldiersAssigned
         active: true
+      - id: showInventoryButton
+        variant: 2
 
 # Options
 recommendedUserOptions:

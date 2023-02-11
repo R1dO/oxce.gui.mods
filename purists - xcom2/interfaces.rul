@@ -12,8 +12,6 @@ interfaces:
         custom: 0    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
         customBool: false
-      - id: ignoreInventoryWarningMessage
-        customBool: true
       - id: optionUseFilterButton
         customBool: false
         delete: customList
@@ -24,6 +22,8 @@ interfaces:
       #   variant: 0    # 0 = never, 1 = always, 2 = if such a limit exist
       - id: showSoldiersAssigned
         active: false
+      - id: showInventoryButton
+        variant: 0
 
 # Borrowed from `standard/Limit_Craft_Item_Capacities_TFTD/`
 crafts:

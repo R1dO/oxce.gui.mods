@@ -8,8 +8,6 @@ interfaces:
         custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
         customBool: true
-      - id: ignoreInventoryWarningMessage
-        customBool: true    # Stop pestering, I know what I'm doing.
       - id: optionUseFilterButton
         customBool: true
       - id: optionUseFilterButton
@@ -25,6 +23,8 @@ interfaces:
         variant: 1
       - id: showSoldiersAssigned
         active: true
+      - id: showInventoryButton
+        variant: 1 # Stop bugging me, I'm not afraid of rookies without weapons.
 
 # Options
 recommendedUserOptions:
