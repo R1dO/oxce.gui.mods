@@ -5,6 +5,12 @@ interfaces:
         color: 1
         color2: 244
         border: 8  # Error color: Red (use 146 for gold)
+      - id: list
+        color: 244
+        color2: 239
+        border: 1
+      - id: ammoColor
+        color: 1
       # Control display of claimed items
       - id: optionShowClaimedAmounts
         custom: 1    # 0 = off, 1 = Meridian style, 2 = r1do style.

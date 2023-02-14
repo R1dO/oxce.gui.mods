@@ -5,6 +5,12 @@ interfaces:
         color: 241   # pink
         color2: 208  # white
         border: 213  # Error color: Gold
+      - id: list
+        color: 218   # blue (regular lines)
+        color2: 208  # white (lines with items on craft)
+        border: 241  # pink (arrow buttons)
+      - id: ammoColor
+        color: 246   # purple
       # Control display of claimed items
       - id: optionShowClaimedAmounts
         custom: 1    # 0 = off, 1 = Meridian style, 2 = r1do style.

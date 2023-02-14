@@ -4,6 +4,11 @@ interfaces:
 #      - id: text  # No need to define again (already in default)
 #        border: 213  # xcom1 Error color: Gold
 #        border: 8  # xcom2 Error color: Red
+# Unfortunately this means loss of colors (in TFTD) if active after "purist" mod.
+# Unless I split up this 'mod' into xcom1/2 this cannot be solved adequately.
+# Will also require:
+#      - id: list
+#      - id: ammoColor
       - id: optionShowClaimedAmounts
         custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
