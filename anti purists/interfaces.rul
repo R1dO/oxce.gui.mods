@@ -9,8 +9,6 @@ interfaces:
 # Will also require:
 #      - id: list
 #      - id: ammoColor
-      - id: optionShowClaimedAmounts
-        custom: 2    # 0 = off, 1 = Meridian style, 2 = r1do style.
       - id: optionUseGlobalListArrows
         customBool: true
       - id: optionUseFilterButton
@@ -30,6 +28,8 @@ interfaces:
         active: true
       - id: showInventoryButton
         variant: 1 # Stop bugging me, I'm not afraid of rookies without weapons.
+      - id: showClaimedAmounts
+        variant: 2
 
 # Options
 recommendedUserOptions:
