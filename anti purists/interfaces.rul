@@ -30,27 +30,29 @@ interfaces:
 recommendedUserOptions:
   oxceAlternateCraftEquipmentManagement: true
 
-# # Related translations.
-# extraStrings:
-#   - type: en-US
-#     strings:
-#       STR_SPACE_USAGE_VS_MAX:
-#         zero: "SPACE>{ALT}{0}"
-#         other: "SPACE>{ALT}{0}:{1}"
-#       STR_ITEMS_USAGE_VS_MAX:
-#         zero: "ITEMS>{ALT}{0}"
-#         other: "ITEMS>{ALT}{0}:{1}"
-#       STR_ITEM_SIZE_USAGE_VS_MAX:
-#         zero: "SIZE>{ALT}{0}"
-#         other: "SIZE>{ALT}{0}:{1}"
-#       STR_CRAFTINVENTORY_BIGGER_THAN_CLAIMED: "> {0}"
-#       STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: "= {0}"
-#       STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: "< {0}"
-#       STR_OK_BUTTON_WARNING: "!!!"
-#       STR_INVENTORY_BUTTON_WARNING: "!!! Inventory !!!"
-#       STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: "Soldiers will lose equipment!{SMALLLINE}To visit inventory anyway use:{NEWLINE}\"CTRL + left mouse button\"{NEWLINE}or \"right mouse button\"."
-#       STR_INVERSE_FILTER_INDICATOR: "Not {0}"
-#       STR_ALL: "Everything"
-#       STR_EQUIPPED: "Equipped"
-#       STR_CLAIMED_BY_SOLDIERS: "Claimed by Soldiers"
-#       STR_UNASSIGNED: "Other"
+# Related translations.
+# Shown here are the defaults as supplied by oxce (no need for override).
+# Defined here to make testing easier (allows activation below purists to show behavior when crafts have limits).
+extraStrings:
+  - type: en-US
+    strings:
+      STR_SPACE_USAGE_VS_MAX:      # {0} is claimed space, {1} is max space.
+        zero: "SPACE>{ALT}{0}"       # No max defined for craft
+        other: "SPACE>{ALT}{0}:{1}"
+      STR_ITEMS_USAGE_VS_MAX:      # {0} is amount of items, {1} is max items.
+        zero: "ITEMS>{ALT}{0}"       # No max defined for craft
+        other: "ITEMS>{ALT}{0}:{1}"
+      STR_ITEM_SIZE_USAGE_VS_MAX:  # {0} is total item size, {1} is max item size.
+        zero: "SIZE>{ALT}{0}"        # No max defined for craft
+        other: "SIZE>{ALT}{0}:{1}"
+      STR_CRAFTINVENTORY_BIGGER_THAN_CLAIMED: "> {0}"  # {0} is claimed/reserved amount.
+      STR_CRAFTINVENTORY_EQUAL_TO_CLAIMED: "= {0}"     # {0} is claimed/reserved amount.
+      STR_CRAFTINVENTORY_SMALLER_THAN_CLAIMED: "< {0}" # {0} is claimed/reserved amount.
+      STR_OK_BUTTON_WARNING: "!!!" # Yup ... screaming is allowed.
+      STR_INVENTORY_BUTTON_WARNING: "!!! Inventory !!!"
+      STR_WARNING_NOT_ENOUGH_FOR_SOLDIER_CLAIMS: "Soldiers will lose equipment!{SMALLLINE}To visit inventory anyway use:{NEWLINE}\"CTRL + left mouse button\"{NEWLINE}or \"right mouse button\"."
+      STR_INVERSE_FILTER_INDICATOR: "Not {0}" # {0} is translated filter name
+      STR_ALL: "Everything"    # common/Language/OXCE
+      STR_EQUIPPED: "Equipped" # common/Language/OXCE
+      STR_CLAIMED_BY_SOLDIERS: "Claimed by Soldiers"
+      STR_UNASSIGNED: "Other"  # common/Language/OXCE , also used by purchase/sell/transfer states.
