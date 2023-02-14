@@ -32,8 +32,8 @@ interfaces:
         variant: 2           # 0 = never, 1 = always, 2 = if such a limit exist
       - id: showSoldiersAssigned
         active: true
-      - id: showInventoryButton
-        variant: 2
+      - id: showInventoryButton # Vanilla did not allow inventory visits from this screen.
+        variant: 2              # 0 = not visible, 1 = visible, 2 = visible and support warning message if soldiers are about to lose items.
 
 # Options
 recommendedUserOptions:

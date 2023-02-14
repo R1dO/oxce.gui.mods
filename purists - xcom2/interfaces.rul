@@ -41,6 +41,7 @@ fixedUserOptions:
 # Related translations.
 # Strings with " " are those that need no translation for this mod.
 # Not using "" since the empty string has a historical meaning of " missing translation".
+# Strings != " " are needed for vanilla behavior.
 extraStrings:
   - type: en-US
     strings:
